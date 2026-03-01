@@ -1,0 +1,159 @@
+:root {
+  --bg-deep: #05070A;
+  --star-color: rgba(255, 255, 255, 0.8);
+  --button-border: rgba(255, 255, 255, 0.2);
+  --button-hover-bg: rgba(255, 255, 255, 0.08);
+  --text-main: #FFFFFF;
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --flemish-gold: #FFD700;
+  --belgian-red: #EF3340;
+  --vira-blue: #00A3FF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-deep);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+    url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2000&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+
+.linktree-container {
+  width: 100%;
+  max-width: 580px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.profile-image-container {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid var(--vira-blue);
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 163, 255, 0.3);
+}
+
+.profile-image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.links-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link-button {
+  width: 100%;
+  padding: 20px 24px;
+  border: 1px solid var(--button-border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.link-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--text-main);
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.social-link {
+  color: var(--text-muted);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.social-link.instagram:hover {
+  color: #E1306C;
+  transform: translateY(-5px) scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(225, 48, 108, 0.5));
+}
+
+.social-link.tiktok:hover {
+  color: #00f2ea;
+  transform: translateY(-5px) scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(0, 242, 234, 0.5));
+}
+
+.social-link.website:hover {
+  color: var(--vira-blue);
+  transform: translateY(-5px) scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(0, 163, 255, 0.5));
+}
+
+.hashtag {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.belgium-flag {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
