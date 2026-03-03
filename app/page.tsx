@@ -49,6 +49,19 @@ export default function Home() {
                 </a>
             </div>
 
+            <div className="links-list">
+                <a
+                    href="https://din.viraweb.online"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-button"
+                >
+                    <span className="belgium-flag">🇩🇰</span>
+                    DINAMARCA
+                    <LinkIcon size={18} opacity={0.5} />
+                </a>
+            </div>
+
             <div className="social-icons">
                 <a
                     href="https://instagram.com/viraweb.online/"
