@@ -61,6 +61,18 @@ export default function Home() {
                     <LinkIcon size={18} opacity={0.5} />
                 </a>
             </div>
+            <div className="links-list">
+                <a
+                    href="https://fra.viraweb.online"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-button"
+                >
+                    <span className="belgium-flag">🇫🇷</span>
+                    FRANÇA
+                    <LinkIcon size={18} opacity={0.5} />
+                </a>
+            </div>
 
             <div className="social-icons">
                 <a
