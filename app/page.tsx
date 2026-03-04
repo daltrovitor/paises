@@ -73,6 +73,18 @@ export default function Home() {
                     <LinkIcon size={18} opacity={0.5} />
                 </a>
             </div>
+            <div className="links-list">
+                <a
+                    href="https://ale.viraweb.online"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-button"
+                >
+                    <span className="belgium-flag">🇩🇪</span>
+                    ALEMANHA
+                    <LinkIcon size={18} opacity={0.5} />
+                </a>
+            </div>
 
             <div className="social-icons">
                 <a
